@@ -6,7 +6,7 @@ import ReviewCard from '../components/Review-card.vue'
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <div class="card w-100 p-4 mt-4">
             <img src="../assets/img/avatar.jpeg" class="card-img-top avatar" alt="аватарка" />
             <div class="card-body">
@@ -26,11 +26,11 @@ import ReviewCard from '../components/Review-card.vue'
                 Участник трех хакатонов Цифровой прорыв 2019, 2020. Дважды выступал в роли капитана
                 команды. Занимался front-end частью проектов
               </p>
-              <a href="#" class="btn btn-primary">Посмотреть полное резюме</a>
+              <a href="/src/assets/cv.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
               <h4 class="card-title">Отзывы клиентов 💼</h4>
