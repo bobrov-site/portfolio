@@ -42,7 +42,7 @@
                 <li><a class="dropdown-item" href="#">Корпоративный тренер из США</a></li>
                 <li><a class="dropdown-item" href="#">Печать фотографий на кружках</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><h6 class="dropdown-header">Верстка  (HTML/CSS)</h6></li>
+                <li><h6 class="dropdown-header">Верстка (HTML/CSS)</h6></li>
                 <li><a class="dropdown-item" href="#">Корпоративные тренинги</a></li>
               </ul>
             </li>
@@ -78,7 +78,8 @@
             <a class="link-icon" href="https://github.com/bobrov-site" target="_blank">
               <i class="bi bi-github me-2"></i>
             </a>
-            <button @click="callMe()" type="button" class="btn btn-primary">Предложить оффер 
+            <button @click="callMe()" type="button" class="btn btn-primary">
+              Предложить оффер
               <i class="bi bi-telephone-fill"></i>
             </button>
           </div>
@@ -90,12 +91,13 @@
 
 <script setup>
 const callMe = () => {
-  return location.href = 'tel:+7 962 425 66 01';
+  return (location.href = 'tel:+7 962 425 66 01')
 }
 </script>
 
 <style lang="scss" scoped>
-.bi-telegram, .bi-github {
-    font-size: 2rem;
+.bi-telegram,
+.bi-github {
+  font-size: 2rem;
 }
 </style>

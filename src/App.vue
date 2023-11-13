@@ -1,13 +1,11 @@
 <script setup>
-import NavbarHeader from './components/Navbar-header.vue';
+import NavbarHeader from './components/Navbar-header.vue'
 </script>
 
 <template>
-  <NavbarHeader/>
+  <NavbarHeader />
 
   <RouterView />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
