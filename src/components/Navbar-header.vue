@@ -78,7 +78,7 @@
             <a class="link-icon" href="https://github.com/bobrov-site" target="_blank">
               <i class="bi bi-github me-2"></i>
             </a>
-            <button @click="callMe()" type="button" class="btn btn-primary">
+            <button @click="callMe()" type="button" class="btn btn-outline-primary">
               Предложить оффер
               <i class="bi bi-telephone-fill"></i>
             </button>
