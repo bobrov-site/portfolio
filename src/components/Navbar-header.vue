@@ -94,4 +94,8 @@ const callMe = () => {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bi-telegram, .bi-github {
+    font-size: 2rem;
+}
+</style>
