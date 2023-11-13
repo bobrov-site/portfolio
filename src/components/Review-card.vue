@@ -10,7 +10,9 @@
         <i class="bi bi-star-fill"></i>
         <i class="bi bi-star-fill"></i>
       </div>
-      <p v-if="!isShowFullText" @click="showFullText()" class="card-text pointer">{{ cropText(reviewText) }}</p>
+      <p v-if="!isShowFullText" @click="showFullText()" class="card-text pointer">
+        {{ cropText(reviewText) }}
+      </p>
       <p v-else class="card-text">{{ reviewText }}</p>
       <a v-if="url" :href="url" target="_blank">Перейти в профиль клиента в VK</a>
     </div>
@@ -18,18 +20,18 @@
 </template>
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 const showFullText = () => {
-    return isShowFullText.value = !isShowFullText.value
+  return (isShowFullText.value = !isShowFullText.value)
 }
 const cropText = (text) => {
-    if (text.length > 200) {
-        return text.slice(0, 200) + '...';
-    }
+  if (text.length > 200) {
+    return text.slice(0, 200) + '...'
+  }
 }
-const isShowFullText = ref(false);
+const isShowFullText = ref(false)
 
-const props = defineProps({
+defineProps({
   name: String,
   reviewText: String,
   avatarUrl: String,
@@ -46,10 +48,10 @@ const props = defineProps({
 }
 
 .bi-star-fill {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 </style>
