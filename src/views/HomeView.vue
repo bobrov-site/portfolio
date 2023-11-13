@@ -7,9 +7,13 @@ import ReviewCard from '../components/Review-card.vue'
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="card w-100 p-4 mt-4">
-            <img src="../assets/img/avatar.jpeg" class="card-img-top avatar" alt="аватарка" />
+          <div class="card w-100 p-2 mt-4">
             <div class="card-body">
+              <img
+                src="../assets/img/avatar.jpeg"
+                class="card-img-top avatar rounded"
+                alt="аватарка"
+              />
               <h1 class="card-title">Привет, будущий руководитель! 👋</h1>
               <p class="card-text">
                 Занимаюсь разработкой сайтов с опытом 3+ года. В период фриланса занимался
@@ -26,7 +30,9 @@ import ReviewCard from '../components/Review-card.vue'
                 Участник трех хакатонов Цифровой прорыв 2019, 2020. Дважды выступал в роли капитана
                 команды. Занимался front-end частью проектов
               </p>
-              <a href="/src/assets/cv.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
+              <a href="/src/assets/cv.pdf" target="_blank" class="btn btn-primary"
+                >Посмотреть полное резюме PDF</a
+              >
             </div>
           </div>
         </div>
@@ -73,7 +79,12 @@ import ReviewCard from '../components/Review-card.vue'
                   </div>
                 </div>
               </div>
-              <a href="https://uslugi.yandex.ru/profile/DaniilBobrov-1159160" target="_blank" class="btn btn-primary">Смотреть больше отзывов</a>
+              <a
+                href="https://uslugi.yandex.ru/profile/DaniilBobrov-1159160"
+                target="_blank"
+                class="btn btn-primary"
+                >Смотреть больше отзывов</a
+              >
             </div>
           </div>
         </div>
