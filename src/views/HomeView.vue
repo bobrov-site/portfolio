@@ -6,7 +6,7 @@ import ReviewCard from '../components/Review-card.vue'
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-12 col-lg-7">
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
               <img
@@ -36,7 +36,7 @@ import ReviewCard from '../components/Review-card.vue'
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-12 col-lg-5">
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
               <h4 class="card-title">Отзывы клиентов 💼</h4>
@@ -87,6 +87,28 @@ import ReviewCard from '../components/Review-card.vue'
               >
             </div>
           </div>
+          <div class="card w-100 p-2 mt-4">
+            <div class="card-body">
+              <h4 class="card-title">Последний проект в портфолио 🥹</h4>
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">Вычислитель отличий</h6>
+                  <div class="mb-2">
+                    <span class="badge text-bg-secondary me-2">Пет-проекты</span>
+                    <span class="badge text-bg-secondary">Проекты школы Хекслет</span>
+                  </div>
+
+                  <a href="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P" target="_blank">
+                    <img
+                      class="project-preview rounded"
+                      src="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P.svg"
+                    />
+                  </a>
+                  <a href="https://github.com/bobrov-site/frontend-project-46" class="btn btn-primary mt-2">Посмотреть проект</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -103,5 +125,9 @@ import ReviewCard from '../components/Review-card.vue'
 .carousel-control-prev,
 .carousel-control-next {
   color: #323232;
+}
+
+.project-preview {
+  width: 100%;
 }
 </style>
