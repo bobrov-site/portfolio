@@ -110,6 +110,7 @@ import ReviewCard from '../components/Review-card.vue'
                   <a
                     href="https://github.com/bobrov-site/frontend-project-46"
                     class="btn btn-primary mt-2 mb-2"
+                    target="_blank"
                     >Посмотреть проект</a
                   >
                   <span class="text-secondary d-block">03.11.2023</span>
