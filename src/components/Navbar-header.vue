@@ -57,11 +57,11 @@
                 Пет-проекты
               </a>
               <ul class="dropdown-menu">
-                <li><h6 class="dropdown-header">Тестовые задании компаний</h6></li>
+                <li><h6 class="dropdown-header">Тестовые задании</h6></li>
                 <li><a class="dropdown-item" href="#">Лендинг для Яндекса</a></li>
                 <li><a class="dropdown-item disabled" href="#">Баннер для Хекслета</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><h6 class="dropdown-header">Проекты школы Хекслет</h6></li>
+                <li><h6 class="dropdown-header">Учебные проекты</h6></li>
                 <li><a class="dropdown-item" href="#">Игры разума</a></li>
                 <li><a class="dropdown-item" href="#">Вычислитель отличий</a></li>
                 <li><hr class="dropdown-divider" /></li>

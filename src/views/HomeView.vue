@@ -98,7 +98,7 @@ import ReviewCard from '../components/Review-card.vue'
                   <h6 class="card-title">Вычислитель отличий</h6>
                   <div class="mb-2">
                     <span class="badge text-bg-secondary me-2">Пет-проекты</span>
-                    <span class="badge text-bg-secondary">Проекты школы Хекслет</span>
+                    <span class="badge text-bg-secondary">Учебные проекты</span>
                   </div>
 
                   <a href="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P" target="_blank">
