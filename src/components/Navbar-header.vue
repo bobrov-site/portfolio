@@ -31,10 +31,14 @@
               </a>
               <ul class="dropdown-menu">
                 <li><h6 class="dropdown-header">Фронтенд (vue.js)</h6></li>
-                <li><a class="dropdown-item" href="#">Билеты на автобус</a></li>
+                <li>
+                  <RouterLink class="dropdown-item"  to="/sites/frontend/evrotrans">Билеты на автобус</RouterLink>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Под ключ (дизайн и wordpress)</h6></li>
-                <li><a class="dropdown-item" href="#">Агропромышленная техника и запчасти</a></li>
+                <li>
+                  <RouterLink class="dropdown-item" to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
+                </li>
                 <li><a class="dropdown-item" href="#">Газификация объектов</a></li>
                 <li><a class="dropdown-item" href="#">Авто из Сша в Россию</a></li>
                 <li><hr class="dropdown-divider" /></li>
@@ -93,6 +97,8 @@
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const callMe = () => {
   return (location.href = 'tel:+7 962 425 66 01')
 }
