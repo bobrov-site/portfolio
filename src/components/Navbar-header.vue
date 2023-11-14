@@ -70,6 +70,9 @@
                 <li><a class="dropdown-item" href="#">Палач (hangman)</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
           </ul>
           <div class="d-flex">
             <a class="link-icon" href="https://t.me/TheWalkingDan" target="_blank">
