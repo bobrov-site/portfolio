@@ -4,33 +4,16 @@
       <div class="col-12">
         <div class="card p-2 mt-4">
           <div class="card-body">
-            <h1 class="card-title">Проект: Билеты на автобус</h1>
-            <div
-              id="carouselExample"
-              class="carousel slide mb-4"
-              data-bs-ride="carousel"
-            >
+            <h1 class="card-title">Проект: {{ props.title }}</h1>
+            <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                  <img
-                    src="/src/assets/img/evrotrans/evrotrans1.png"
-                    alt="slide"
-                    class="img-fluid rounded"
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img
-                    src="/src/assets/img/evrotrans/evrotrans2.png"
-                    alt="slide"
-                    class="img-fluid rounded"
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                  <img
-                    src="/src/assets/img/evrotrans/evrotrans3.png"
-                    alt="slide"
-                    class="img-fluid rounded"
-                  />
+                <div
+                  v-for="(item, index) in props.images"
+                  :key="index"
+                  class="carousel-item"
+                  :class="{ active: index === 0 }"
+                >
+                  <img :src="item" :alt="`${item}${index}`" class="img-fluid rounded" />
                 </div>
               </div>
               <button
@@ -54,28 +37,16 @@
             </div>
             <h2 class="card-title">Обязанности:</h2>
             <ul class="list-group mb-2">
-                <li class="list-group-item">
-                    верстка сайта по макету на bootstrap 5.
-                </li>
-                <li class="list-group-item">
-                    Верстка компонентов при помощи vuetify, без дизайн-макета по ТЗ.
-                </li>
-                <li class="list-group-item">
-                    Исправление ошибок в верстке при отображении на разных типах устройств.
-                </li>
-                <li class="list-group-item">
-                    Настройка маршрутизации страниц.
-                </li>
-                <li class="list-group-item">
-                    Исправление ошибок в работе компонентов.
-                </li>
+              <li v-for="item in props.responsibilities" :key="item" class="list-group-item">
+                {{ item }}
+              </li>
             </ul>
             <h2 class="card-title">Достижения:</h2>
             <p class="card-text">
-                Разработал сайт evrotrans.net на vue.js. Сайт стал работать быстрее, стал масштабируемым. Настроил компонент поиска билета. Настроил страницу оформления билетов. Написал валидацию для оформления билетов. Сверстал все страницы предусмотренные дизайнером из Figma и адаптировал под все устройства.
+              {{ props.achivments }}
             </p>
             <p class="card-text">
-                <a href="#" class="text-link">Ссылка на проект</a>
+              <a :href="props.projectUrl" class="text-link" target="_blank">Ссылка на проект</a>
             </p>
           </div>
         </div>
@@ -84,7 +55,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { defineProps } from 'vue'
 
-<style lang="scss" scoped>
-</style>
+const props = defineProps({
+  title: String,
+  images: Array,
+  responsibilities: Array,
+  achivments: String,
+  projectUrl: String
+})
+</script>
+
+<style lang="scss" scoped></style>
