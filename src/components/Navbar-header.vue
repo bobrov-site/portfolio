@@ -86,7 +86,7 @@
                     >Печать фотографий на кружках</RouterLink
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
+                <!-- <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Верстка (HTML/CSS)</h6></li>
                 <li>
                   <RouterLink
@@ -95,7 +95,7 @@
                     to="/sites/html/properegovory"
                     >Корпоративные тренинги</RouterLink
                   >
-                </li>
+                </li> -->
               </ul>
             </li>
             <li class="nav-item dropdown">
