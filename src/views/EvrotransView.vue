@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -20,6 +20,9 @@ const images = [
 ]
 
 const title = 'Билеты на автобус'
+
+const githubUrl = 'https://github.com/vfz/et_app'
+const siteUrl = 'https://evrotrans.net/'
 </script>
 
 <style lang="scss" scoped>
