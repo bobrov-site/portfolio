@@ -1,10 +1,10 @@
 <template>
-    <div>
-        hello wrd
-    </div>
+    <ProjectContent/>
 </template>
 
 <script setup>
+import ProjectContent from '../components/Project-content.vue';
+
 
 </script>
 
