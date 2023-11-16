@@ -45,10 +45,10 @@
             <p class="card-text">
               {{ props.achivments }}
             </p>
-            <p class="card-text">
+            <p v-if="props.githubUrl" class="card-text">
               <a :href="props.githubUrl" class="text-link" target="_blank">Ссылка на проект в Github</a>
             </p>
-            <a :href="props.siteUrl" class="btn btn-primary" target="_blank">Посмотреть сайт</a>
+            <a v-if="props.siteUrl" :href="props.siteUrl" class="btn btn-primary" target="_blank">Посмотреть сайт</a>
           </div>
         </div>
       </div>
