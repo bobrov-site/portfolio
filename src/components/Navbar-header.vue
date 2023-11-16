@@ -17,12 +17,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink class="nav-link" :class="{'active' : route.name === 'home'}" to="/">Главная</RouterLink>
+              <RouterLink class="nav-link" :class="{ active: route.name === 'home' }" to="/"
+                >Главная</RouterLink
+              >
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                :class="{'active': route.fullPath.includes('sites')}"
+                :class="{ active: route.fullPath.includes('sites') }"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -33,24 +35,67 @@
               <ul class="dropdown-menu">
                 <li><h6 class="dropdown-header">Фронтенд (vue.js)</h6></li>
                 <li>
-                  <RouterLink :class="{'active' : route.name === 'evrotrans'}" class="dropdown-item" to="/sites/frontend/evrotrans">Билеты на автобус</RouterLink>
+                  <RouterLink
+                    :class="{ active: route.name === 'evrotrans' }"
+                    class="dropdown-item"
+                    to="/sites/frontend/evrotrans"
+                    >Билеты на автобус</RouterLink
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Под ключ (дизайн и wordpress)</h6></li>
                 <li>
-                  <RouterLink :class="{'active' : route.name === 'mag'}" class="dropdown-item" to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
+                  <RouterLink
+                    :class="{ active: route.name === 'mag' }"
+                    class="dropdown-item"
+                    to="/sites/keys/mag"
+                    >Агропромышленная техника и запчасти</RouterLink
+                  >
                 </li>
                 <li>
-                  <RouterLink :class="{'active' : route.name === 'stavgaz'}" class="dropdown-item" to="/sites/keys/stavgaz">Газификация объектов</RouterLink>
+                  <RouterLink
+                    :class="{ active: route.name === 'stavgaz' }"
+                    class="dropdown-item"
+                    to="/sites/keys/stavgaz"
+                    >Газификация объектов</RouterLink
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#">Авто из Сша в Россию</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'gogocars' }"
+                    class="dropdown-item"
+                    to="/sites/keys/gogocars"
+                    >Авто из Сша в Россию</RouterLink
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Разработка на Wordpress</h6></li>
-                <li><a class="dropdown-item" href="#">Корпоративный тренер из США</a></li>
-                <li><a class="dropdown-item" href="#">Печать фотографий на кружках</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'academyofmotivaction' }"
+                    class="dropdown-item"
+                    to="/sites/wordpress/academyofmotivaction"
+                    >Корпоративный тренер из США</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'printboom' }"
+                    class="dropdown-item"
+                    to="/sites/wordpress/printboom"
+                    >Печать фотографий на кружках</RouterLink
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Верстка (HTML/CSS)</h6></li>
-                <li><a class="dropdown-item" href="#">Корпоративные тренинги</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'properegovory' }"
+                    class="dropdown-item"
+                    to="/sites/html/properegovory"
+                    >Корпоративные тренинги</RouterLink
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -65,16 +110,51 @@
               </a>
               <ul class="dropdown-menu">
                 <li><h6 class="dropdown-header">Тестовые задании</h6></li>
-                <li><a class="dropdown-item" href="#">Лендинг для Яндекса</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'yandex' }"
+                    class="dropdown-item"
+                    to="/pet/tusks/yandex"
+                    >Лендинг для Яндекса</RouterLink
+                  >
+                </li>
                 <li><a class="dropdown-item disabled" href="#">Баннер для Хекслета</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Учебные проекты</h6></li>
-                <li><a class="dropdown-item" href="#">Игры разума</a></li>
-                <li><a class="dropdown-item" href="#">Вычислитель отличий</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'brain-games' }"
+                    class="dropdown-item"
+                    to="/pet/educational-projects/brain-games"
+                    >Игры разума</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'gendiff' }"
+                    class="dropdown-item"
+                    to="/pet/educational-projects/gendiff"
+                    >Вычислитель отличий</RouterLink
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Собственные проекты</h6></li>
-                <li><a class="dropdown-item" href="#">Тудулист</a></li>
-                <li><a class="dropdown-item" href="#">Палач (hangman)</a></li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'todolist' }"
+                    class="dropdown-item"
+                    to="/pet/pet-projects/todolist"
+                    >Тудулист</RouterLink
+                  >
+                </li>
+                <li>
+                  <RouterLink
+                    :class="{ active: route.name === 'hangman' }"
+                    class="dropdown-item"
+                    to="/pet/pet-projects/hangman"
+                    >Тудулист</RouterLink
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -100,7 +180,7 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router'
 
 const route = useRoute()
 
