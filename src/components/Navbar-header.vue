@@ -40,7 +40,9 @@
                 <li>
                   <RouterLink :class="{'active' : route.name === 'mag'}" class="dropdown-item" to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
                 </li>
-                <li><a class="dropdown-item" href="#">Газификация объектов</a></li>
+                <li>
+                  <RouterLink :class="{'active' : route.name === 'stavgaz'}" class="dropdown-item" to="/sites/keys/stavgaz">Газификация объектов</RouterLink>
+                </li>
                 <li><a class="dropdown-item" href="#">Авто из Сша в Россию</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Разработка на Wordpress</h6></li>
