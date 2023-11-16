@@ -152,7 +152,7 @@
                     :class="{ active: route.name === 'hangman' }"
                     class="dropdown-item"
                     to="/pet/pet-projects/hangman"
-                    >Тудулист</RouterLink
+                    >Палач (hangman)</RouterLink
                   >
                 </li>
               </ul>
