@@ -17,11 +17,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              <RouterLink class="nav-link" :class="{'active' : route.name === 'home'}" to="/">Главная</RouterLink>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
+                :class="{'active': route.fullPath.includes('sites')}"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -97,7 +98,9 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
+import { useRoute } from 'vue-router';
+
+const route = useRoute()
 
 const callMe = () => {
   return (location.href = 'tel:+7 962 425 66 01')
