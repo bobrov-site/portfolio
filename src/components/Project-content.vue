@@ -46,8 +46,9 @@
               {{ props.achivments }}
             </p>
             <p class="card-text">
-              <a :href="props.projectUrl" class="text-link" target="_blank">Ссылка на проект</a>
+              <a :href="props.githubUrl" class="text-link" target="_blank">Ссылка на проект в Github</a>
             </p>
+            <a :href="props.siteUrl" class="btn btn-primary" target="_blank">Посмотреть сайт</a>
           </div>
         </div>
       </div>
@@ -63,8 +64,13 @@ const props = defineProps({
   images: Array,
   responsibilities: Array,
   achivments: String,
-  projectUrl: String
+  githubUrl: String,
+  siteUrl: String
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.text-link {
+  cursor: pointer;
+}
+</style>
