@@ -33,12 +33,12 @@
               <ul class="dropdown-menu">
                 <li><h6 class="dropdown-header">Фронтенд (vue.js)</h6></li>
                 <li>
-                  <RouterLink class="dropdown-item"  to="/sites/frontend/evrotrans">Билеты на автобус</RouterLink>
+                  <RouterLink :class="{'active' : route.name === 'evrotrans'}" class="dropdown-item" to="/sites/frontend/evrotrans">Билеты на автобус</RouterLink>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Под ключ (дизайн и wordpress)</h6></li>
                 <li>
-                  <RouterLink class="dropdown-item" to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
+                  <RouterLink :class="{'active' : route.name === 'mag'}" class="dropdown-item" to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
                 </li>
                 <li><a class="dropdown-item" href="#">Газификация объектов</a></li>
                 <li><a class="dropdown-item" href="#">Авто из Сша в Россию</a></li>
