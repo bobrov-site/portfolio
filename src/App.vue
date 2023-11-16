@@ -1,13 +1,21 @@
 <script setup>
 import NavbarHeader from './components/Navbar-header.vue'
-import FooterBar from './components/Footer-bar.vue';
+import FooterBar from './components/Footer-bar.vue'
 </script>
 
 <template>
-  <NavbarHeader />
-
-  <RouterView />
-  <FooterBar/>
+  <div class="app">
+    <NavbarHeader />
+    <RouterView />
+    <FooterBar />
+  </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+</style>
