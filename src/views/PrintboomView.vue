@@ -9,10 +9,10 @@ const responsibilities = [
     'Разработка сайта на Wordpress по ТЗ',
 ]
 const images = [
-    '/src/assets/img/printboom/printboom1.jpeg',
-    '/src/assets/img/printboom/printboom2.jpeg',
-    '/src/assets/img/printboom/printboom3.jpeg',
-    '/src/assets/img/printboom/printboom4.jpeg',
+    '/public/img/printboom/printboom1.jpeg',
+    '/public/img/printboom/printboom2.jpeg',
+    '/public/img/printboom/printboom3.jpeg',
+    '/public/img/printboom/printboom4.jpeg',
 ]
 
 const title = 'Печать фотографий на кружках'

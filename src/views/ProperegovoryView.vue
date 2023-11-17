@@ -11,9 +11,9 @@ const responsibilities = [
     'Настройка и установка jivochat на сайт'
 ]
 const images = [
-    '/src/assets/img/properegovory/properegovory1.jpeg',
-    '/src/assets/img/properegovory/properegovory2.jpeg',
-    '/src/assets/img/properegovory/properegovory3.jpeg',
+    '/public/img/properegovory/properegovory1.jpeg',
+    '/public/img/properegovory/properegovory2.jpeg',
+    '/public/img/properegovory/properegovory3.jpeg',
 ]
 
 const title = 'Корпоративные тренинги'

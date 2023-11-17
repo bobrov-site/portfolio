@@ -18,9 +18,9 @@ const responsibilities = [
     'Запись видеоинструкции по работе с сайтом'
 ]
 const images = [
-    '/src/assets/img/gogocars/gogocars1.jpeg',
-    '/src/assets/img/gogocars/gogocars2.jpeg',
-    '/src/assets/img/gogocars/gogocars3.jpeg',
+    '/.public/img/gogocars/gogocars1.jpeg',
+    '/.public/img/gogocars/gogocars2.jpeg',
+    '/.public/img/gogocars/gogocars3.jpeg',
 ]
 
 const title = 'Авто из США в Россию'

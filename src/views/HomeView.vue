@@ -11,7 +11,7 @@ import ReviewCard from '../components/Review-card.vue'
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
               <img
-                src="../assets/img/avatar.jpeg"
+                src="public/img/avatar.jpeg"
                 class="card-img-top avatar rounded"
                 alt="аватарка"
               />
@@ -47,14 +47,14 @@ import ReviewCard from '../components/Review-card.vue'
                   <div class="carousel-item active" data-bs-interval="3000">
                     <ReviewCard
                       url="https://vk.com/romanperminov"
-                      avatarUrl="src/assets/img/review1.jpg"
+                      avatarUrl="public/img/review1.jpg"
                       name="Роман П."
                       reviewText="Спасибо за проделанную работу. Даниил разработал для нас сайт и дизайн для него. Своевременно добавлял необходимые изменения, к правкам относится спокойно. Мы продолжим сотрудничество развивая наш проект дальше!"
                     />
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <ReviewCard
-                      avatarUrl="src/assets/img/review2.jpeg"
+                      avatarUrl="public/img/review2.jpeg"
                       name="Mamulz"
                       reviewText="Рад тому, что попал именно к Даниилу. В работе со мной был очень вежлив, все грамотно и понятно объяснял. Помог быстро зарегистрировать сайт, без задержек сдавал поставленную работу и что немало важно прислушивался к моим просьбам. Готовым сайтом очень доволен, огромное ему спасибо! Буду рекомендовать его окружающим!"
                     />
@@ -62,14 +62,14 @@ import ReviewCard from '../components/Review-card.vue'
                   <div class="carousel-item" data-bs-interval="10000">
                     <ReviewCard
                       url="https://vk.com/id409548206"
-                      avatarUrl="src/assets/img/review3.jpg"
+                      avatarUrl="public/img/review3.jpg"
                       name="Ольга Чередниченко"
                       reviewText="Мы работали с Даниилом над сайтом http://rseeorg.ru для 15-ой Международной научно-практической конференции Российского общества экологической экономики. В процессе выполнения мне понравилась оперативность и отзывчивость Даниила. На все просьбы реагирует быстро и старается помочь в развитии сайта. Всегда находится в онлайне и с полуслова понимает задачу, которую нужно выполнить. Понравилось качество работы: проделана большая работа по информированию участников конференции - сделаны все необходимые страницы информативного характера, форма обратной связи и отображение всех заявок в панели администратора. Все очень нравится, буду рада дальнейшему сотрудничеству!"
                     />
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <ReviewCard
-                      avatarUrl="src/assets/img/review4.png"
+                      avatarUrl="public/img/review4.png"
                       name="Диана Е."
                       reviewText="с Даниилом сотрудничаю уже второй год, было сделано к текущему моменту большое количество проектов.
 Отличный специалист, своевременно отвечает, очень доступно все объясняет, инициативен, предлагает альтернативные варианты решения. Работой очень довольна, буду и дальше обращаться"
