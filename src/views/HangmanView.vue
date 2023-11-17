@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :images="images" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :tech-stack="techStack" :images="images" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -14,6 +14,14 @@ const images = [
 
 const title = 'Виселица (hangman)'
 const githubUrl = 'https://github.com/bobrov-site/todolistvue'
+
+const techStack = [
+    'Typescript',
+    'Vue',
+    'Vite',
+    'Eslint',
+    'Axios'
+]
 </script>
 
 <style lang="scss" scoped>
