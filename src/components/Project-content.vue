@@ -63,11 +63,11 @@
             </p>
             <a v-if="props.siteUrl" :href="props.siteUrl" class="btn btn-primary" target="_blank"
               >Посмотреть сайт</a>
-              <h2 class="card-title">
+              <h2 v-if="props.techStack" class="card-title">
                  Технологии:
               </h2>
               <div v-if="props.techStack">
-                <span v-for="(item, index) in props.techStack" :key="index" :class="{ 'me-2': index !== props.techStack.length - 1}" class="badge text-bg-secondary">{{ item }}</span>
+                <span v-for="(item, index) in sortTechStack(props.techStack)" :key="index" :class="{ 'me-2': index !== props.techStack.length - 1}" class="badge text-bg-secondary">{{ item }}</span>
               </div>
           </div>
         </div>
@@ -78,6 +78,10 @@
 
 <script setup>
 import { defineProps } from 'vue'
+
+const sortTechStack = (techStack) => {
+  return techStack.sort()
+}
 
 const props = defineProps({
   title: String,
