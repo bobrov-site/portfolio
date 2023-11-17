@@ -82,7 +82,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
 
 const sortTechStack = (techStack) => {
   return techStack.sort()
