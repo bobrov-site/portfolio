@@ -48,6 +48,9 @@
             <p v-if="props.githubUrl" class="card-text">
               <a :href="props.githubUrl" class="text-link" target="_blank">Ссылка на проект в Github</a>
             </p>
+            <p v-if="props.tuskUrl" class="card-text">
+              <a :href="props.tuskUrl" class="text-link" target="_blank">Ссылка на поставленную задачу</a>
+            </p>
             <a v-if="props.siteUrl" :href="props.siteUrl" class="btn btn-primary" target="_blank">Посмотреть сайт</a>
           </div>
         </div>
@@ -65,7 +68,8 @@ const props = defineProps({
   responsibilities: Array,
   achivments: String,
   githubUrl: String,
-  siteUrl: String
+  siteUrl: String,
+  tuskUrl: String,
 })
 </script>
 
