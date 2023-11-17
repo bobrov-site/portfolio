@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -17,6 +17,9 @@ const images = [
 
 const title = 'Печать фотографий на кружках'
 const siteUrl = 'https://print-boom.ru/'
+const techStack = [
+    'Wordpress',
+]
 </script>
 
 <style lang="scss" scoped>

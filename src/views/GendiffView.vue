@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :tech-stack="techStack" :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -16,6 +16,15 @@ const responsibilities = [
 const ascinema = `<a href="https://asciinema.org/a/fzCW6swmlpH9XUluA5RHz3m61" target="_blank"><img src="https://asciinema.org/a/fzCW6swmlpH9XUluA5RHz3m61.svg" /></a>`
 const title = 'Вычислитель отличий'
 const githubUrl = 'https://github.com/bobrov-site/gendiff'
+const techStack = [
+    'JS',
+    'Node.js',
+    'Makefile',
+    'Eslint',
+    'Commander',
+    'lodash',
+    'jest'
+]
 </script>
 
 <style lang="scss" scoped>

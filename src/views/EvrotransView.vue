@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -23,6 +23,17 @@ const title = 'Билеты на автобус'
 
 const githubUrl = 'https://github.com/vfz/et_app'
 const siteUrl = 'https://evrotrans.net/'
+const techStack = [
+    'HTML',
+    'CSS',
+    'JS',
+    'Vue.js',
+    'Bootstrap',
+    'Vue-yandex-maps',
+    'Vue-router',
+    'Axios',
+    'Api'
+]
 </script>
 
 <style lang="scss" scoped>

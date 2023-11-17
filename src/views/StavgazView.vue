@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -26,6 +26,18 @@ const images = [
 
 const title = 'Газификация коммерческих объектов и индивидуальных жилых домов'
 const siteUrl = 'https://stvgaz.ru/'
+const techStack = [
+    'HTML',
+    'SCSS',
+    'JS',
+    'PHP',
+    'Wordpress',
+    'ACF',
+    'Webpack',
+    'Gulp',
+    'Yoast SEO',
+    'Bootstrap'
+]
 </script>
 
 <style lang="scss" scoped>

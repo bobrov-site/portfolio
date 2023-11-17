@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :images="images" :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :tech-stack="techStack" :images="images" :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -20,6 +20,17 @@ const images = [
 
 const title = 'Тудулист'
 const githubUrl = 'https://github.com/bobrov-site/todolistvue'
+const techStack = [
+    'Vue.js',
+    'Vite',
+    'Vee-validate',
+    'Vue-router',
+    'Bootstrap',
+    'Firebase',
+    'Axios',
+    'Eslint',
+    'Sass'
+]
 </script>
 
 <style lang="scss" scoped>

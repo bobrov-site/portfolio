@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :tusk-url="tuskUrl" :github-url="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :tech-stack="techStack" :tusk-url="tuskUrl" :github-url="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -22,6 +22,16 @@ const title = 'Тестовое задание для Яндекса'
 const siteUrl = 'https://bobrov-site.github.io/yandex-test.github.io/'
 const githubUrl = 'https://github.com/bobrov-site/yandex'
 const tuskUrl = 'https://www.figma.com/file/hPoTSryZFpFN5J0ookjAir/Yandes-test?type=design&node-id=0%3A1&mode=design&t=4L17gfDPuJfYMWmi-1'
+const techStack = [
+    'HTML',
+    'CSS',
+    'JS',
+    'VITE',
+    'Figma',
+    'Swiper.js',
+    'animate.css',
+    'wow.js'
+]
 </script>
 
 <style lang="scss" scoped>

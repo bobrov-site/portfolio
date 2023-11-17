@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -25,6 +25,18 @@ const images = [
 
 const title = 'Авто из США в Россию'
 const siteUrl = 'https://gogocars.ru/'
+const techStack = [
+    'HTML',
+    'SCSS',
+    'JS',
+    'PHP',
+    'Wordpress',
+    'ACF',
+    'Webpack',
+    'Gulp',
+    'Yoast SEO',
+    'Bootstrap'
+]
 </script>
 
 <style lang="scss" scoped>

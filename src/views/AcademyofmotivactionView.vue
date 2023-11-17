@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -20,6 +20,9 @@ const images = [
 
 const title = 'Корпоративный тренер из США'
 const siteUrl = 'https://academyofmotivaction.com/'
+const techStack = [
+    'Wordpress',
+]
 </script>
 
 <style lang="scss" scoped>

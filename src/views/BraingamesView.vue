@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :tech-stack="techStack" :ascinema="ascinema" :github-url="githubUrl" :title="title" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -15,6 +15,12 @@ const responsibilities = [
 const ascinema = `<a href="https://asciinema.org/a/wkvLHGhMGur9BMiptTkyy4Imo" target="_blank"><img src="https://asciinema.org/a/wkvLHGhMGur9BMiptTkyy4Imo.svg" /></a>`
 const title = 'Игры разума'
 const githubUrl = 'https://github.com/bobrov-site/brain-games'
+const techStack = [
+    'JS',
+    'Node.js',
+    'Makefile',
+    'Eslint'
+]
 </script>
 
 <style lang="scss" scoped>

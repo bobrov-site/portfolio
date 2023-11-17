@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
+    <ProjectContent :techStack="techStack" :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images" :responsibilities="responsibilities" :achivments="achivments"/>
 </template>
 
 <script setup>
@@ -28,6 +28,16 @@ const title = 'Продажа агропромышленной техники и
 
 const githubUrl = 'https://github.com/bobrov-site/mag'
 const siteUrl = 'https://ooo-mag.ru'
+const techStack = [
+    'HTML',
+    'SCSS',
+    'JS',
+    'PHP',
+    'Webpack',
+    'ACF',
+    'Wordpress',
+    'Bootstrap'
+]
 </script>
 
 <style lang="scss" scoped>
