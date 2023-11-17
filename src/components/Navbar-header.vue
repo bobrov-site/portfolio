@@ -157,19 +157,19 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
           </ul>
           <div class="d-flex">
-            <a class="link-icon" href="https://t.me/TheWalkingDan" target="_blank">
-              <i class="bi bi-telegram me-2"></i>
-            </a>
             <a class="link-icon" href="https://github.com/bobrov-site" target="_blank">
               <i class="bi bi-github me-2"></i>
             </a>
+            <a class="link-icon" href="https://t.me/TheWalkingDan" target="_blank">
+              <i class="bi bi-telegram me-2"></i>
+            </a>
+            <a class="link-icon" href="https://www.instagram.com/bobrov_site/" target="_blank">
+              <i class="bi bi-instagram me-4"></i>
+            </a>
             <button @click="callMe()" type="button" class="btn btn-outline-primary">
-              Предложить оффер
+              Связаться со мной
               <i class="bi bi-telephone-fill"></i>
             </button>
           </div>
@@ -190,6 +190,7 @@ const callMe = () => {
 </script>
 
 <style lang="scss" scoped>
+.bi-instagram,
 .bi-telegram,
 .bi-github {
   font-size: 2rem;
