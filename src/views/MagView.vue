@@ -19,9 +19,9 @@ const responsibilities = [
     'Запись видеоинструкции по работе с сайтом'
 ]
 const images = [
-    '/public/img/mag/mag1.jpeg',
-    '/public/img/mag/mag2.jpeg',
-    '/public/img/mag/mag3.jpeg',
+    '/img/mag/mag1.jpeg',
+    '/img/mag/mag2.jpeg',
+    '/img/mag/mag3.jpeg',
 ]
 
 const title = 'Продажа агропромышленной техники и запчастей'

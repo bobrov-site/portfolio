@@ -13,9 +13,9 @@ const responsibilities = [
     'Создание личного кабинета для учеников и учителя',
 ]
 const images = [
-    '/public/img/academyofmotivation/academyofmotivation1.jpeg',
-    '/public/img/academyofmotivation/academyofmotivation2.jpeg',
-    '/public/img/academyofmotivation/academyofmotivation3.jpeg',
+    '/img/academyofmotivation/academyofmotivation1.jpeg',
+    '/img/academyofmotivation/academyofmotivation2.jpeg',
+    '/img/academyofmotivation/academyofmotivation3.jpeg',
 ]
 
 const title = 'Корпоративный тренер из США'

@@ -14,9 +14,9 @@ const responsibilities = [
     'Исправление ошибок в работе компонентов.'
 ]
 const images = [
-    '/public/img/evrotrans/evrotrans1.png',
-    '/public/img/evrotrans/evrotrans2.png',
-    '/public/img/evrotrans/evrotrans3.png',
+    '/img/evrotrans/evrotrans1.png',
+    '/img/evrotrans/evrotrans2.png',
+    '/img/evrotrans/evrotrans3.png',
 ]
 
 const title = 'Билеты на автобус'

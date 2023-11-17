@@ -12,10 +12,10 @@ const responsibilities = [
     'Написание валидации для формы регистрации и входа пользователя',
 ]
 const images = [
-    '/public/img/todolist/todolist1.jpeg',
-    '/public/img/todolist/todolist2.jpeg',
-    '/public/img/todolist/todolist3.jpeg',
-    '/public/img/todolist/todolist4.jpeg',
+    '/img/todolist/todolist1.jpeg',
+    '/img/todolist/todolist2.jpeg',
+    '/img/todolist/todolist3.jpeg',
+    '/img/todolist/todolist4.jpeg',
 ]
 
 const title = 'Тудулист'

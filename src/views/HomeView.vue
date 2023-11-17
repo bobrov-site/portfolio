@@ -11,7 +11,7 @@ import ReviewCard from '../components/Review-card.vue'
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
               <img
-                src="public/img/avatar.jpeg"
+                src="/img/avatar.jpeg"
                 class="card-img-top avatar rounded"
                 alt="аватарка"
               />

@@ -7,9 +7,9 @@ import ProjectContent from '../components/Project-content.vue';
 const achivments = 'Создал игру "виселица". Изучил основы typescript. Разбил игру по компонентам. Воспроизвел все пользовательские сценарии, чтобы не было неожиданных ошибок или действий от пользователя'
 
 const images = [
-    '/public/img/hangman/hangman1.jpeg',
-    '/public/img/hangman/hangman2.jpeg',
-    '/public/img/hangman/hangman3.jpeg',
+    '/img/hangman/hangman1.jpeg',
+    '/img/hangman/hangman2.jpeg',
+    '/img/hangman/hangman3.jpeg',
 ]
 
 const title = 'Виселица (hangman)'

@@ -19,9 +19,9 @@ const responsibilities = [
     'Запись видеоинструкции по работе с сайтом'
 ]
 const images = [
-    '/public/img/stavgaz/stavgaz1.jpeg',
-    '/public/img/stavgaz/stavgaz2.jpeg',
-    '/public/img/stavgaz/stavgaz3.jpeg',
+    '/img/stavgaz/stavgaz1.jpeg',
+    '/img/stavgaz/stavgaz2.jpeg',
+    '/img/stavgaz/stavgaz3.jpeg',
 ]
 
 const title = 'Газификация коммерческих объектов и индивидуальных жилых домов'
