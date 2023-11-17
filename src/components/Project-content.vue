@@ -82,7 +82,6 @@
 </template>
 
 <script setup>
-
 const sortTechStack = (techStack) => {
   return techStack.sort()
 }

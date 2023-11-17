@@ -54,12 +54,12 @@ const router = createRouter({
     {
       path: '/sites/html/properegovory',
       name: 'properegovory',
-      component: ProperegovoryView,
+      component: ProperegovoryView
     },
     {
       path: '/pet/tusks/yandex',
       name: 'yandex',
-      component: YandexView,
+      component: YandexView
     },
     {
       path: '/pet/educational-projects/brain-games',
