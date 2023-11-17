@@ -23,12 +23,6 @@ import ReviewCard from '../components/Review-card.vue'
                 Wordpress). На данный момент занимаюсь разработкой приложений на Vue.js
               </p>
               <p class="card-text">
-                Мною были разработаны разного типа: лендинги, многостраничные сайты и интернет
-                магазины разной коммерческой направленности. В моей базе более 30 положительных
-                отзывов от моих клиентов, которые являются предприниматели в малом и среднем
-                бизнесе.
-              </p>
-              <p class="card-text">
                 Рассматриваю вакансию на позицию фронтенд-разработчика в компанию, где смогу
                 улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                 единомышленников
@@ -107,14 +101,13 @@ import ReviewCard from '../components/Review-card.vue'
                       src="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P.svg"
                     />
                   </a>
+                  <span class="text-secondary d-block">03.11.2023</span>
                   <a
                     href="https://github.com/bobrov-site/frontend-project-46"
                     class="btn btn-primary mt-2 mb-2"
                     target="_blank"
                     >Посмотреть проект</a
                   >
-                  <span class="text-secondary d-block">03.11.2023</span>
-                  
                 </div>
               </div>
             </div>
