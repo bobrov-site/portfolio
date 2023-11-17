@@ -40,9 +40,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <div v-if="props.ascinema" v-html="props.ascinema" class="ascinema w-100">
-              
-            </div>
+            <div v-if="props.ascinema" v-html="props.ascinema" class="ascinema w-100"></div>
             <h2 v-if="props.responsibilities" class="card-title">Обязанности:</h2>
             <ul v-if="props.responsibilities" class="list-group mb-2">
               <li v-for="item in props.responsibilities" :key="item" class="list-group-item">
@@ -64,8 +62,13 @@
               >
             </p>
             <a v-if="props.siteUrl" :href="props.siteUrl" class="btn btn-primary" target="_blank"
-              >Посмотреть сайт</a
-            >
+              >Посмотреть сайт</a>
+              <h2 class="card-title">
+                 Технологии:
+              </h2>
+              <div v-if="props.techStack">
+                <span v-for="(item, index) in props.techStack" :key="index" :class="{ 'me-2': index !== props.techStack.length - 1}" class="badge text-bg-secondary">{{ item }}</span>
+              </div>
           </div>
         </div>
       </div>
@@ -84,7 +87,8 @@ const props = defineProps({
   githubUrl: String,
   siteUrl: String,
   tuskUrl: String,
-  ascinema: String
+  ascinema: String,
+  techStack: Array
 })
 </script>
 
