@@ -28,7 +28,7 @@ import ReviewCard from '../components/Review-card.vue'
                 улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                 единомышленников
               </p>
-              <a href="/src/assets/cv.pdf" target="_blank" class="btn btn-primary"
+              <a href="/public/cv.pdf" target="_blank" class="btn btn-primary"
                 >Посмотреть полное резюме PDF</a
               >
             </div>
