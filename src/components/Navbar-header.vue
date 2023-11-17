@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Бобров Даниил 👨‍💻</a>
+        <p class="navbar-brand mb-0">Бобров Даниил 👨‍💻</p>
         <button
           class="navbar-toggler"
           type="button"
