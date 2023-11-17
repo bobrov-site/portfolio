@@ -77,7 +77,7 @@ const router = createRouter({
       component: TodolistView
     },
     {
-      path: '/pet/pet-project/hangman',
+      path: '/pet/pet-projects/hangman',
       name: 'hangman',
       component: HangmanView
     }
