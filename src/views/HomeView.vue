@@ -10,7 +10,7 @@ import ReviewCard from '../components/Review-card.vue'
         <div class="col-12 col-lg-7">
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
-              <img src="img/avatar.jpeg" class="card-img-top avatar rounded" alt="аватарка" />
+              <img src="/img/avatar.jpeg" class="card-img-top avatar rounded" alt="аватарка" />
               <h1 class="card-title">Привет, будущий руководитель! 👋</h1>
               <p class="card-text">
                 Занимаюсь разработкой сайтов 3+ года. Мною были разработаны разного типа: лендинги,
