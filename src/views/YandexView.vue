@@ -21,11 +21,11 @@ const responsibilities = [
   'Адаптивная верстка'
 ]
 const images = [
-  '/img/yandex/yandex1.jpeg',
-  '/img/yandex/yandex2.jpeg',
-  '/img/yandex/yandex3.jpeg',
-  '/img/yandex/yandex4.jpeg',
-  '/img/yandex/yandex5.jpeg'
+  '/portfolio/img/yandex/yandex1.jpeg',
+  '/portfolio/img/yandex/yandex2.jpeg',
+  '/portfolio/img/yandex/yandex3.jpeg',
+  '/portfolio/img/yandex/yandex4.jpeg',
+  '/portfolio/img/yandex/yandex5.jpeg'
 ]
 
 const title = 'Тестовое задание для Яндекса'

@@ -15,9 +15,9 @@ const achivments =
   'Создал игру "виселица". Изучил основы typescript. Разбил игру по компонентам. Воспроизвел все пользовательские сценарии, чтобы не было неожиданных ошибок или действий от пользователя'
 
 const images = [
-  '/img/hangman/hangman1.jpeg',
-  '/img/hangman/hangman2.jpeg',
-  '/img/hangman/hangman3.jpeg'
+  '/portfolio/img/hangman/hangman1.jpeg',
+  '/portfolio/img/hangman/hangman2.jpeg',
+  '/portfolio/img/hangman/hangman3.jpeg'
 ]
 
 const title = 'Виселица (hangman)'
