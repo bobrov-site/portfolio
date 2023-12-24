@@ -88,33 +88,6 @@ import LastProject from '../components/Last-project.vue'
             :img-src="'/portfolio/img/hexlet/hexlet.png'"
             :project-url="'/pet/tusks/hexlet'"
           />
-          <div class="card w-100 p-2 mt-4">
-            <div class="card-body">
-              <h4 class="card-title">Последний проект в портфолио 🥹</h4>
-              <div class="card">
-                <div class="card-body">
-                  <h6 class="card-title">Вычислитель отличий</h6>
-                  <div class="mb-2">
-                    <span class="badge text-bg-secondary me-2">Пет-проекты</span>
-                    <span class="badge text-bg-secondary">Учебные проекты</span>
-                  </div>
-
-                  <a href="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P" target="_blank">
-                    <img
-                      class="project-preview rounded"
-                      src="https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P.svg"
-                    />
-                  </a>
-                  <span class="text-secondary d-block">03.11.2023</span>
-                  <RouterLink
-                    class="btn btn-primary mt-2 mb-2"
-                    to="/pet/educational-projects/gendiff"
-                    >Посмотреть проект</RouterLink
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
