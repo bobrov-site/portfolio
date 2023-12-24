@@ -104,12 +104,17 @@
                   <RouterLink
                     :class="{ active: route.name === 'yandex' }"
                     class="dropdown-item"
-                    to="/pet/tusks/yandex">
+                    to="/pet/tusks/yandex"
+                  >
                     Лендинг для Яндекса
-                    </RouterLink>
+                  </RouterLink>
                 </li>
                 <li>
-                  <RouterLink :class="{active: route.name === 'hexlet'}" class="dropdown-item" to="/pet/tusks/hexlet">
+                  <RouterLink
+                    :class="{ active: route.name === 'hexlet' }"
+                    class="dropdown-item"
+                    to="/pet/tusks/hexlet"
+                  >
                     Баннер для Хекслета
                   </RouterLink>
                 </li>

@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import ReviewCard from '../components/Review-card.vue'
-import LastProject from '../components/Last-project.vue';
+import LastProject from '../components/Last-project.vue'
 </script>
 
 <template>
@@ -83,10 +83,10 @@ import LastProject from '../components/Last-project.vue';
             </div>
           </div>
           <LastProject
-          :title="'Баннер для хекслета'"
-          :breadcrumbs="['Пет-проекты', 'Тестовые задания']"
-          :img-src="'/portfolio/img/hexlet/hexlet.png'"
-          :project-url="'/pet/tusks/hexlet'"
+            :title="'Баннер для хекслета'"
+            :breadcrumbs="['Пет-проекты', 'Тестовые задания']"
+            :img-src="'/portfolio/img/hexlet/hexlet.png'"
+            :project-url="'/pet/tusks/hexlet'"
           />
           <div class="card w-100 p-2 mt-4">
             <div class="card-body">
