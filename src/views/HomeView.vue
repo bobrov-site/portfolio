@@ -2,7 +2,6 @@
 import ReviewCard from '../components/Review-card.vue'
 import LastProject from '../components/Last-project.vue'
 </script>
-
 <template>
   <main>
     <div class="container">
