@@ -86,16 +86,6 @@
                     >Печать фотографий на кружках</RouterLink
                   >
                 </li>
-                <!-- <li><hr class="dropdown-divider" /></li>
-                <li><h6 class="dropdown-header">Верстка (HTML/CSS)</h6></li>
-                <li>
-                  <RouterLink
-                    :class="{ active: route.name === 'properegovory' }"
-                    class="dropdown-item"
-                    to="/sites/html/properegovory"
-                    >Корпоративные тренинги</RouterLink
-                  >
-                </li> -->
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -114,11 +104,15 @@
                   <RouterLink
                     :class="{ active: route.name === 'yandex' }"
                     class="dropdown-item"
-                    to="/pet/tusks/yandex"
-                    >Лендинг для Яндекса</RouterLink
-                  >
+                    to="/pet/tusks/yandex">
+                    Лендинг для Яндекса
+                    </RouterLink>
                 </li>
-                <li><a class="dropdown-item disabled" href="#">Баннер для Хекслета</a></li>
+                <li>
+                  <RouterLink :class="{active: route.name === 'hexlet'}" class="dropdown-item" to="/pet/tusks/hexlet">
+                    Баннер для Хекслета
+                  </RouterLink>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Учебные проекты</h6></li>
                 <li>

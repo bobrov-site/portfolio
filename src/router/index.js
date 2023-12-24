@@ -12,6 +12,7 @@ import BraingamesView from '../views/BraingamesView.vue'
 import GendiffView from '../views/GendiffView.vue'
 import TodolistView from '../views/TodolistView.vue'
 import HangmanView from '../views/HangmanView.vue'
+import HexletView from '../views/HexletView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -60,6 +61,11 @@ const router = createRouter({
       path: '/pet/tusks/yandex',
       name: 'yandex',
       component: YandexView
+    },
+    {
+      path: '/pet/tusks/hexlet',
+      name: 'hexlet',
+      component: HexletView
     },
     {
       path: '/pet/educational-projects/brain-games',
