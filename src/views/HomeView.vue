@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink } from 'vue-router'
 import ReviewCard from '../components/Review-card.vue'
 import LastProject from '../components/Last-project.vue'
 </script>
