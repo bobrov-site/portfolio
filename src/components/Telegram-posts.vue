@@ -20,8 +20,8 @@
                     </p>
                 </div>
             </div>
-            <div>
-                <p v-if="posts.length === 0 && !loading" class="card-text">Постов на данный момент нет. Но вы можете подписаться на блог 🫠</p>
+            <div v-if="posts.length === 0 && !loading">
+                <p class="card-text">Постов на данный момент нет. Но вы можете подписаться на блог 🫠</p>
                 <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary">Перейти в канал</a>
             </div>
         </div>
