@@ -1,7 +1,7 @@
 <script setup>
 import ReviewCard from '../components/Review-card.vue'
 import LastProject from '../components/Last-project.vue'
-// import TelegramPosts from '../components/Telegram-posts.vue';
+import TelegramPosts from '../components/Telegram-posts.vue';
 </script>
 <template>
   <main>
@@ -29,7 +29,7 @@ import LastProject from '../components/Last-project.vue'
               >
             </div>
           </div>
-          <!-- <TelegramPosts/> -->
+          <TelegramPosts/>
         </div>
         <div class="col-12 col-lg-5">
           <div class="card w-100 p-2 mt-4">

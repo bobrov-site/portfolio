@@ -11,7 +11,7 @@ const initAxios = () => {
     })
 }
 
-const getFile = async(api, filePath) => {
-    return await api.get(`file/bot${token}/${filePath}`)
+const getFile = (api, filePath) => {
+    return `${api.getUri()}/file/bot${token}/${filePath}`
 }
 export  {initAxios, getFile}
