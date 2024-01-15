@@ -5,21 +5,13 @@
             <div v-if="loading" class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
-            <div v-for="(post, index) in posts" :key="index" class="card mb-2">
+            <div v-for="(post, index) in getLastPosts" :key="index" class="card mb-2">
                 <div class="card-body">
-                    <div class="images">
-                        <div v-for="(image, imgIndex) in post.photoes" :key="imgIndex" class="image">
-                            <img v-if="image" :src="image" class="img-fluid">
-                        </div>
-                    </div>
-                    <p v-if="post.text" class="card-text">
-                        {{ post.text }}
-                    </p>
-                    <p v-if="post.caption">
-                        {{ post.caption }}
-                    </p>
+                    <div class="card-content" v-html="post.content_html"></div>
+                    <a :href="post.url" class="btn btn-primary mt-2">Перейти к посту</a>
                 </div>
             </div>
+            <a v-if="posts" href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary">Перейти в канал</a>
             <div v-if="posts.length === 0 && !loading">
                 <p class="card-text">Постов на данный момент нет. Но вы можете подписаться на блог 🫠</p>
                 <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary">Перейти в канал</a>
@@ -28,61 +20,32 @@
     </div>
 </template>
 <script setup>
-import { initAxios, getFile } from '../assets/axios';
-import { onMounted, ref } from 'vue';
-onMounted(async () => {
+import axios from 'axios'
+import { ref, onMounted, computed } from 'vue';
+onMounted(async() => {
     await getPosts();
+    addClassToImages();
 })
 const posts = ref([])
-const chatId = '-1002134268477'
-const testChatId = '-1001350297337'
-const token = '6846844188:AAFVf1CLEZGQ-IsZbkYo_tQo9UrGTm9tgO0'
 const loading = ref(false)
-const getPosts = async () => {
+const getLastPosts = computed(() => {
+    return posts.value.slice(0, 5)
+})
+const getPosts = async() => {
     loading.value = true
-    await initAxios().get(`bot${token}/getUpdates?`).then(async (response) => {
-        const data = response.data.result
-        const rowPosts = data.filter((item) => {
-            if (Object.hasOwn(item, 'channel_post')) {
-                //TODO used test id
-                // return item['channel_post']['chat']['id'] === Number.parseInt(testChatId)
-                return item['channel_post']['chat']['id'] === Number.parseInt(chatId)
-            }
-        })
-        if (rowPosts.length !== 0) {
-            const map = []
-            for (let i = 0; i < rowPosts.length; i++) {
-                const result = {}
-                result.text = rowPosts[i]['channel_post']['text']
-                if (rowPosts[i]['channel_post']['text']) {
-                    result.text = rowPosts[i]['channel_post']['text']
-                }
-                if (rowPosts[i]['channel_post']['caption']) {
-                    result.caption = rowPosts[i]['channel_post']['caption']
-                }
-                if (rowPosts[i]['channel_post']['photo']) {
-                    const photoes = await getPhotoesFiles(rowPosts[i]['channel_post']['photo'])
-                    result.photoes = photoes
-                }
-                map.push(result)
-            }
-            posts.value = map
-        }
-        loading.value = false
-    })
-        .catch((error) => {
-            loading.value = false
-            console.log(error, 'error')
-        })
+    const response = await axios.get('https://wtf.roflcopter.fr/rss-bridge/?action=display&bridge=TelegramBridge&username=%40bobrov_frontend&format=Json')
+    posts.value = response.data.items
+    loading.value = false
 }
-const getPhotoesFiles = async (photoes) => {
-    const result = []
-    for (let i = 0; i < photoes.length; i++) {
-        const response = await initAxios().get(`bot${token}/getFile?file_id=${photoes[i]['file_id']}`)
-        const filePath = getFile(initAxios(), response.data.result['file_path'])
-        result.push(filePath)
-    }
-    return result
+const addClassToImages = () => {
+    const cardContent = document.getElementsByClassName('card-content');
+    const arrayCardContent = Array.from(cardContent)
+    arrayCardContent.map((item) => {
+        const img = item.querySelector('img')
+        if (img !== null) {
+            img.classList.add('card-img')
+        }
+    })
 }
 </script>
 
