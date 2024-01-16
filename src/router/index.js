@@ -89,5 +89,6 @@ const router = createRouter({
     }
   ]
 })
-
+// https://bobrov-site.github.io/portfolio/pet/tusks/hexlet
+// https://bobrov-site.github.io/portfolio/pet/tusks/yandex
 export default router
