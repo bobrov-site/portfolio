@@ -7,7 +7,7 @@
             </div>
             <div v-for="(post, index) in getLastPosts" :key="index" class="card mb-2">
                 <div class="card-body">
-                    <div class="card-content" v-html="post.content_html"></div>
+                    <div class="card-content card-content-telegram" v-html="post.content_html"></div>
                     <a :href="post.url" class="btn btn-primary mt-2">Перейти к посту</a>
                 </div>
             </div>
@@ -49,8 +49,11 @@ const addClassToImages = () => {
 }
 </script>
 
-<style lang="scss" scoped>
-.image {
-    max-width: 250px;
+<style lang="scss">
+.card-content-telegram {
+    img {
+        max-height: 250px;
+        object-fit: cover;
+    }
 }
 </style>
