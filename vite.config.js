@@ -2,7 +2,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-const token = '6846844188:AAFVf1CLEZGQ-IsZbkYo_tQo9UrGTm9tgO0'
 
 // https://vitejs.dev/config/
 export default defineConfig({
