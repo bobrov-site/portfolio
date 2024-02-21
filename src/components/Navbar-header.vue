@@ -136,6 +136,15 @@
                     >Вычислитель отличий</RouterLink
                   >
                 </li>
+                <li>
+                  <RouterLink
+                  :class="{ active: route.name === 'gendiff' }"
+                  class="dropdown-item"
+                  to="/pet/educational-projects/rss-aggregator"
+                  >
+                    RSS агрегатор
+                  </RouterLink>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><h6 class="dropdown-header">Собственные проекты</h6></li>
                 <li>

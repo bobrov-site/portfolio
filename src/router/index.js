@@ -13,6 +13,7 @@ import GendiffView from '../views/GendiffView.vue'
 import TodolistView from '../views/TodolistView.vue'
 import HangmanView from '../views/HangmanView.vue'
 import HexletView from '../views/HexletView.vue'
+import RssAggregatorView from '../views/RssAggregatorView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -78,6 +79,11 @@ const router = createRouter({
       component: GendiffView
     },
     {
+      path: '/pet/educational-projects/rss-aggregator',
+      name: 'rss-aggregator',
+      component: RssAggregatorView
+    },
+    {
       path: '/pet/pet-projects/todolist',
       name: 'todolist',
       component: TodolistView
@@ -89,6 +95,4 @@ const router = createRouter({
     }
   ]
 })
-// https://bobrov-site.github.io/portfolio/pet/tusks/hexlet
-// https://bobrov-site.github.io/portfolio/pet/tusks/yandex
 export default router

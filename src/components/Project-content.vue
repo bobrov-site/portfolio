@@ -8,7 +8,7 @@
             <div
               v-if="props.images"
               id="carouselExample"
-              class="carousel slide mb-4"
+              class="carousel carousel-dark slide mb-4"
               data-bs-ride="carousel"
             >
               <div class="carousel-inner">
@@ -41,15 +41,14 @@
               </button>
             </div>
             <div v-if="props.ascinema" v-html="props.ascinema" class="ascinema w-100"></div>
-            <h2 v-if="props.responsibilities" class="card-title">Обязанности:</h2>
+            <h2 v-if="props.responsibilities" class="card-title mt-2">Обязанности:</h2>
             <ul v-if="props.responsibilities" class="list-group mb-2">
               <li v-for="item in props.responsibilities" :key="item" class="list-group-item">
                 {{ item }}
               </li>
             </ul>
             <h2 class="card-title">Достижения:</h2>
-            <p class="card-text">
-              {{ props.achivments }}
+            <p class="card-text" v-html="props.achivments">
             </p>
             <h2 v-if="props.techStack" class="card-title">Технологии:</h2>
             <div v-if="props.techStack" class="mb-4">
