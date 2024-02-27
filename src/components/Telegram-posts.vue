@@ -11,10 +11,11 @@
                     <a :href="post.url" class="btn btn-primary mt-2">Перейти к посту</a>
                 </div>
             </div>
-            <a v-if="posts" href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary">Перейти в канал</a>
+            <a v-if="posts.length !==0" href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary">Перейти в
+                канал</a>
             <div v-if="posts.length === 0 && !loading">
-                <p class="card-text">Постов на данный момент нет. Но вы можете подписаться на блог 🫠</p>
-                <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary">Перейти в канал</a>
+                <p class="card-text">Ошибка загрузки. Попробуйте позже. Но вы можете подписаться на блог 🫠</p>
+                <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary">Перейти в канал</a>
             </div>
         </div>
     </div>
@@ -22,7 +23,7 @@
 <script setup>
 import axios from 'axios'
 import { ref, onMounted, computed } from 'vue';
-onMounted(async() => {
+onMounted(async () => {
     await getPosts();
     addClassToImages();
 })
@@ -31,12 +32,26 @@ const loading = ref(false)
 const getLastPosts = computed(() => {
     return posts.value.slice(0, 5)
 })
-const getPosts = async() => {
-    loading.value = true
-    const response = await axios.get('https://wtf.roflcopter.fr/rss-bridge/?action=display&bridge=TelegramBridge&username=%40bobrov_frontend&format=Json')
-    posts.value = response.data.items
-    loading.value = false
-}
+const getPosts = async () => {
+    const url = 'https://wtf.roflcopter.fr/rss-bridge/?action=display&bridge=TelegramBridge&username=%40bobrov_frontend&format=Json';
+    loading.value = true;
+
+    const timeoutPromise = new Promise((resolve, reject) => {
+        setTimeout(() => reject(new Error('Timeout after 3 seconds')), 3000);
+    });
+
+    try {
+        const response = await Promise.race([
+            axios.get(url),
+            timeoutPromise
+        ]);
+        posts.value = response.data.items;
+    } catch (e) {
+        console.error(e.message); // Отобразить сообщение об ошибке, если нужно
+    } finally {
+        loading.value = false;
+    }
+};
 const addClassToImages = () => {
     const cardContent = document.getElementsByClassName('card-content');
     const arrayCardContent = Array.from(cardContent)
