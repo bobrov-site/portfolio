@@ -1,6 +1,6 @@
 <template>
     <div class="alert alert-warning" role="alert">
-  Этот сайт больше не актуален. Переехал на Nuxt 3 <a href="https://portfolio-nuxt-two.vercel.app/" class="alert-link">новый сайт</a>. Перейдите пожалуйста на новый
+  Этот сайт больше не актуален. Переехал на Nuxt 3 <a href="https://bobrov-site.vercel.app/" class="alert-link">новый сайт</a>. Перейдите пожалуйста на новый
   </div>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">

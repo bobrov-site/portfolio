@@ -1,3 +1,7 @@
+# This repository is no longer maintained!
+
+I have a new site builded with Nuxt 3. [Check it](https://github.com/bobrov-site/portfolio-nuxt)
+
 # portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
